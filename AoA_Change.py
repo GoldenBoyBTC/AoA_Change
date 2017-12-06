@@ -20,7 +20,7 @@ with open('coordinatesAt0.txt') as fin:
     fin.readline() 
     for l in fin:     
         coords = map(float,l.split())
-        angle = 30 # The angle of attack the airfoil will be rotated COUNTER-CLOCKWISE!
+        angle = 30 # The angle of attack the airfoil will be rotated by, COUNTER-CLOCKWISE!
         origin = (0,0) # The origin where the airfoil will be rotated around.
         coords0 = rotate(origin, coords[:2], math.radians(angle))
         coordsAt0.append(coords0)
