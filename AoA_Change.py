@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# Author: Pavlos Mparitakis - November 2017
 
 import math  
 
@@ -24,8 +25,8 @@ with open('coordinatesAt0.txt') as fin:
         coords0 = rotate(origin, coords[:2], math.radians(angle))
         coordsAt0.append(coords0)
 
-# Export the results into a ready-to-be-imported-into-gmsh .geo file.
-with open('newcoordinates.geo','w') as fout:  
+# Export the results into a new .txt file.
+with open('newcoordinates.txt','w') as fout:  
     for i, c in enumerate(coordsAt0):
         fout.write('Point (%i) = {%f, %f, 0, 1};\n'%(i+1,c[0],c[1])) 
 
