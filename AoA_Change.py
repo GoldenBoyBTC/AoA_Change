@@ -24,9 +24,5 @@ with open('coordinatesAt0.txt') as fin:
         origin = (0,0) # The origin where the airfoil will be rotated around.
         coords0 = rotate(origin, coords[:2], math.radians(angle))
         coordsAt0.append(coords0)
-
-# Export the results into a new .txt file.
-with open('newcoordinates.txt','w') as fout:  
-    for i, c in enumerate(coordsAt0):
-        fout.write('Point (%i) = {%f, %f, 0, 1};\n'%(i+1,c[0],c[1])) 
+        print coords0
 
