@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Author: Pavlos Mparitakis - November 2017
 
 import math  
 
