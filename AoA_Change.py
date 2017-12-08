@@ -23,5 +23,6 @@ with open('coordinatesAt0.txt') as fin:
         origin = (0,0) # The origin where the airfoil will be rotated around.
         coords0 = rotate(origin, coords[:2], math.radians(angle))
         coordsAt0.append(coords0)
+        
         print coords0
 
