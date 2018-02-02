@@ -23,6 +23,10 @@ with open('coordinatesAt0.txt') as fin:
         coords0 = rotate(origin, coords[:2], math.radians(angle))
         coordsAt0.append(coords0)
         
+# Optionally, print the new coordinates in terminal. Can be used in conjuction with Dot2Comma.py for use in ANSYS Fluent Software.
+        #print coords
+
+# Output the new coordinates in .geo format for use in Gmsh.     
 with open('newcoordinates.geo','w') as fout: 
     for i, c in enumerate(coordsAt0): 
         fout.write('Point (%i) = {%f, %f, 0, 1};\n'%(i+1,c[0],c[1]))
