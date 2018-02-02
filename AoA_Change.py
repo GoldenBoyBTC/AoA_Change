@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import math  
 
 # Function which calculates the coordinates of the airfoil at the new angle of attack.
@@ -26,5 +25,5 @@ with open('coordinatesAt0.txt') as fin:
         
 with open('newcoordinates.geo','w') as fout: 
     for i, c in enumerate(coordsAt0): 
-    fout.write('Point (%i) = {%f, %f, 0, 1};\n'%(i+1,c[0],c[1]))
+        fout.write('Point (%i) = {%f, %f, 0, 1};\n'%(i+1,c[0],c[1]))
 
