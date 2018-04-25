@@ -4,7 +4,7 @@ Python script used to change the angle of attack of a 2D airfoil using its x, y 
 # todo
 
   - a proper todo list
-  - implement it in javascript for more convinient use
+  - implement it in javascript for more convenient use
   - documentation
 
 # license
